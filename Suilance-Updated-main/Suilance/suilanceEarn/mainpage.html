@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suilance Dashboard</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"><img src="suilance.png" alt="Suilance Logo"></div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="suilanceNews\suilanceNews.html">Articles</a>
+            <a href="#">Notifications</a>
+            <button class="connect-wallet" id="connectWallet">Connect Wallet</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- User Dashboard -->
+        <section class="user-dashboard" 
+        style=" padding-top: 50px;
+        padding-bottom: 60px;
+        padding-right: 30px;
+        padding-left: 30px">
+
+            <div class="user-profile">
+                <div class="avatar">I</div>
+                <div class="welcome-text">
+                    <h2>Hello, Ivan</h2>
+                    <p>@Iv_verse</p>
+                </div>
+            </div>
+            <div class="user-stats">
+                <div class="stat">
+                    <div class="stat-label">
+                        <i class="fas fa-wallet"></i> <span>Earned</span>
+                    </div>
+                    <p class="stat-value">2,450 USDC</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">
+                        <i class="fas fa-bolt"></i> <span>Bounties</span>
+                    </div>
+                    <p class="stat-value">12</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">
+                        <i class="fas fa-briefcase"></i> <span>Jobs</span>
+                    </div>
+                    <p class="stat-value">5</p>
+                </div>
+            </div>
+        </section>
+
+          <!-- Dropdown Menu for Categories -->
+          <section class="categories">
+            <select id="category-select">
+                <option value="for-you">For You</option>
+                <option value="bounties">Bounties</option>
+                <option value="grants">Grants</option>
+                <option value="hackathons">Hackathons</option>
+            </select>
+        </section>
+
+        <!-- Services Section with 16 Cards -->
+        <section class="services">
+            <!-- Gig 1-->
+            <div class="service-card">
+                <img src="cetus.png" alt="cetus img">
+                <div class="service-details">
+                    <h3>Write a thread on Cetus Aggregator </i></h3>
+                    <div class="usdc"><img src="USDC.png"><h1> 400 USDC </h1></div>
+                    <div class="provider-info">
+                        <span>Cetus <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 2d left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gig 2 -->
+            <div class="service-card">
+                <img src="fud.png" alt="FUD img">
+                <div class="service-details">
+                    <h3>Meme Contest for Fud new feature</h3>
+                    <div class="usdc"><img src="USDC.png"><h1> 320 USDC </h1></div>
+                    <div class="provider-info">
+                        <span>Fud <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 6d left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gig 3 -->
+            <div class="service-card">
+                <img src="hop.png" alt="hop img">
+                <div class="service-details">
+                    <h3>Write a thread on Hop.fun Launch Last Week</h3>
+                    <div class="usdc"><img src="USDC.png"><h1> 490 USDC </h1></div>
+                    <div class="provider-info">
+                        <span>Hop Aggregator <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 4h left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Gig 1-->
+           <div class="service-card">
+            <img src="cetus.png" alt="cetus img">
+            <div class="service-details">
+                <h3>Write a thread on Cetus Aggregator</h3>
+                <div class="usdc"><img src="USDC.png"><h1> 760 USDC </h1></div>
+                <div class="provider-info">
+                    <span>Cetus <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                    <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 2d left</span>
+                    <button class="get-started">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gig 2 -->
+        <div class="service-card">
+            <img src="fud.png" alt="FUD img">
+            <div class="service-details">
+                <h3>Meme Contest for Fud new feature</h3>
+                <div class="price">$95</div>
+                <div class="provider-info">
+                    <span>Fud <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                    <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 6d left</span>
+                    <button class="get-started">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gig 3 -->
+        <div class="service-card">
+            <img src="hop.png" alt="hop img">
+            <div class="service-details">
+                <h3>Write a thread on Hop.fun Launch Last Week</h3>
+                <div class="price">$59</div>
+                <div class="provider-info">
+                    <span>Hop Aggregator <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                    <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 4h left</span>
+                    <button class="get-started">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Another Example Service Card -->
+        <div class="service-card">
+            <img src="Mystenlabs.png" alt="Mysten img">
+            <div class="service-details">
+                <h3>Move Junior Developer (6-12 months experience)</h3>
+                <div class="price">$1500</div>
+                <div class="provider-info">
+                    <span>Mysten Labs <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                    <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 12 left</span>
+                    <button class="get-started">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+           <!-- Gig 1-->
+            <div class="service-card">
+                <img src="cetus.png" alt="cetus img">
+                <div class="service-details">
+                    <h3>Write a thread on Cetus Aggregator</h3>
+                    <div class="price">$150</div>
+                    <div class="provider-info">
+                        <span>Cetus <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 2d left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gig 2 -->
+            <div class="service-card">
+                <img src="fud.png" alt="FUD img">
+                <div class="service-details">
+                    <h3>Meme Contest for Fud new feature</h3>
+                    <div class="price">$95</div>
+                    <div class="provider-info">
+                        <span>Fud <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 6d left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gig 3 -->
+            <div class="service-card">
+                <img src="hop.png" alt="hop img">
+                <div class="service-details">
+                    <h3>Write a thread on Hop.fun Launch Last Week</h3>
+                    <div class="price">$59</div>
+                    <div class="provider-info">
+                        <span>Hop Aggregator <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 4h left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another Example Service Card -->
+            <div class="service-card">
+                <img src="Mystenlabs.png" alt="Mysten img">
+                <div class="service-details">
+                    <h3>Move Junior Developer (6-12 months experience)</h3>
+                    <div class="price">$1500</div>
+                    <div class="provider-info">
+                        <span>Mysten Labs <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                        <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 12 left</span>
+                        <button class="get-started">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+    <!-- Gig 1-->
+    <div class="service-card">
+        <img src="cetus.png" alt="cetus img">
+        <div class="service-details">
+            <h3>Write a thread on Cetus Aggregator</h3>
+            <div class="price">$150</div>
+            <div class="provider-info">
+                <span>Cetus <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 2d left</span>
+                <button class="get-started">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gig 2 -->
+    <div class="service-card">
+        <img src="fud.png" alt="FUD img">
+        <div class="service-details">
+            <h3>Meme Contest for new Fud feature</h3>
+            <div class="price">$95</div>
+            <div class="provider-info">
+                <span>Fud <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 6d left</span>
+                <button class="get-started">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gig 3 -->
+    <div class="service-card">
+        <img src="hop.png" alt="hop img">
+        <div class="service-details">
+            <h3>Write a thread on Hop.fun Launch Last Week</h3>
+            <div class="price">$59</div>
+            <div class="provider-info">
+                <span>Hop Aggregator <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 4h left</span>
+                <button class="get-started">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- Gig 1-->
+   <div class="service-card">
+    <img src="cetus.png" alt="cetus img">
+    <div class="service-details">
+        <h3>Write a thread on Cetus Aggregator</h3>
+        <div class="price">$150</div>
+        <div class="provider-info">
+            <span>Cetus <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+            <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 2d left</span>
+            <button class="get-started">Apply Now</button>
+        </div>
+    </div>
+</div>
+
+
+      <!-- Gig 1-->
+    <div class="service-card">
+        <img src="cetus.png" alt="cetus img">
+        <div class="service-details">
+            <h3>Write a thread on Cetus Aggregator</h3>
+            <div class="price">$150</div>
+            <div class="provider-info">
+                <span>Cetus <i class="fas fa-check-circle" style="color: #0073e6;"></i></span>
+                <span class="days-left"><i class="fas fa-circle" style="color: rgb(71, 221, 71); margin-right: 5px;"></i> 2d left</span>
+                <button class="get-started">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-logo">
+                    <div class="logo">
+                        <img src="suilance.png" alt="Suilance Logo">
+                    </div>
+                </h2>
+                <p class="footer-description">With Suilance, Web3 freelancers can do tasks and get paid in cryptocurrency.</p>
+                <button class="subscribe-button">Subscribe to Newsletter</button>
+            </div>
+    
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Earn</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i> X</a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="#"><i class="fab fa-telegram"></i> Telegram</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+                    <li><a href="#"><i class="fas fa-headset"></i> Support</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    
+        <div class="footer-bottom">
+            <p><a href="#">Terms of Use</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p>&copy; 2024 Suilance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="connect.js"></script>
+    
+    <!-- Footer Section -->
+
+
+</body>
+</html>
